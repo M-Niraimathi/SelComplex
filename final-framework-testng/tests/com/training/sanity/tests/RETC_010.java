@@ -53,12 +53,12 @@ public class RETC_010 {
 	@AfterClass
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		driver.quit();
+		//driver.quit();
 	}
 	@Test
 	public void validLoginTest() throws InterruptedException {
 		newlaunch.ClickNewLaunch1(); 
-		newlaunch.sendkeywordsearch("1hkd");
+		newlaunch.sendkeywordsearch("lhkd");
 		newlaunch.ClickSearch();
 		newlaunch.clickSearchProperties();
 		newlaunch.sendSearchPropertie(properties.getProperty("Apartmentsearchbox")); 
